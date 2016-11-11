@@ -32,3 +32,6 @@
 
 # Ignore gemset
 .ruby-gemset
+
+# Ignore saved node modules
+node_modules

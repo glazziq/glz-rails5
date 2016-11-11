@@ -21,7 +21,7 @@ module Skeleton
     # By default only files in /app and /node_modules are browserified,
     # vendor stuff is normally not made for browserification and may stop
     # working.
-    # config.browserify_rails.paths << /vendor\/assets\/javascripts\/module\.js/
+    config.browserify_rails.paths << /app\/assets\/javascripts\/components/
 
     # Environments in which to generate source maps
     #
@@ -42,7 +42,7 @@ module Skeleton
     # Command line options used when running browserify
     #
     # can be provided as an array:
-    # config.browserify_rails.commandline_options = ["-t browserify-shim", "--fast"]
+    config.browserify_rails.commandline_options = ["-t browserify-shim", "--fast"]
     config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 ] --extensions .es6 ]"
 
     # or as a string:

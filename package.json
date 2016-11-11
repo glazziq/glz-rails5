@@ -6,9 +6,14 @@
     "turbolinks": "~5",
     "jquery": "~3",
     "jquery-ujs": "~1",
-    "react": "~15"
+    "react": "~15",
+    "react-dom": "~15"
+  },
+  "browserify-shim": {
+    "jquery": "$"
   },
   "devDependencies": {
+    "browserify-shim": "~3",
     "babelify": "~7",
     "babel-preset-es2015": "~6"
   },

@@ -42,11 +42,14 @@ module Skeleton
     # Command line options used when running browserify
     #
     # can be provided as an array:
-    config.browserify_rails.commandline_options = ["-t browserify-shim", "--fast"]
-    config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 ] --extensions .es6 ]"
+    config.browserify_rails.commandline_options = [
+      "-t [ babelify --presets [ es2015 react ] ]",
+      "-t browserify-shim",
+      "--fast"
+    ]
 
     # or as a string:
-    config.browserify_rails.commandline_options = "-t browserify-shim --fast"
+    # config.browserify_rails.commandline_options = "-t browserify-shim --fast"
 
     # Define NODE_ENV to be used with envify
     #
